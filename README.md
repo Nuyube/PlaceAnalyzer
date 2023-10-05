@@ -25,8 +25,8 @@ Then, set your recency (number of frames to draw for the diff map). One frame is
 
 When you're ready, press Generate Diffs to generate the images. It'll be a PNG-Sequence for output, so if you were looking to create a video, this command is particularly useful to you:
 
-ffmpeg -r FPS -i "File name %d.png" -c:v codec -b:v bitrate video.mp4
+`ffmpeg -r FPS -i "File name %d.png" -c:v codec -b:v bitrate video.mp4`
 
 For example, my videos were rendered with
 
-ffmpeg -r 60 -i "\_250\_%d.png" -c:v hevc_nvenc -b:v 30M video.mp4
+`ffmpeg -r 60 -i "\_250\_%d.png" -c:v hevc_nvenc -b:v 30M video.mp4`
